@@ -1,0 +1,7 @@
+# Database Configuration
+# Copy this file to db.properties and update with your credentials
+
+db.url=jdbc:mysql://localhost:3306/mindlearn_db?useSSL=false&serverTimezone=UTC
+db.username=root
+db.password=your_password_here
+db.driver=com.mysql.cj.jdbc.Driver
