@@ -41,4 +41,10 @@ build/
 ### Sensitive Files ###
 # Database properties (contains credentials)
 src/main/resources/db.properties
+# Gemini API configuration (contains API keys)
+src/main/resources/gemini.properties
+# Environment variables (may contain secrets)
 .env
+# AWS credentials
+aws credentials
+credentials.json

@@ -13,5 +13,15 @@ CREATE TABLE IF NOT EXISTS users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Create mindmap_history table to store user generated mindmaps
+CREATE TABLE IF NOT EXISTS mindmap_history (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    topic VARCHAR(255) NOT NULL,
+    mindmap_data TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
 -- Optional: Insert a test user
 -- INSERT INTO users (email, password) VALUES ('test@example.com', 'password123');
