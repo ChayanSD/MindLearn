@@ -30,3 +30,17 @@ A simple learning management system built with JSP, Servlet, and MySQL.
 - Password hashing with BCrypt
 - Session management
 - Topics page (protected)
+
+## Registration 
+![registration.png](src/registration.png)
+
+## Login Screen
+![login.png](src/login.png)
+
+## Topics Screen
+![topics.png](src/topics.png)
+
+## Output
+![img.png](src/img.png)
+
+## My SQL View
